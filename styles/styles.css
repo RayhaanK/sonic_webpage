@@ -1,0 +1,390 @@
+    @import url('https://fonts.googleapis.com/css2?family=Turret+Road:wght@300;400;700&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Turret Road", sans-serif;
+  }
+
+  ::selection {
+    color: goldenrod;
+  }
+
+  header {
+      width: 100%;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+      background: blue;
+  }
+
+  header h1 {
+      margin-left: 30px;
+      color: gold ;
+  }
+
+  header h1:hover {
+      cursor: pointer;
+  }
+
+  .nav-links {
+      display: flex;
+      text-decoration: none;
+      list-style: none;
+      text-transform: uppercase;
+      padding: 40px;
+  }
+
+  .headlink {
+      list-style-type: none;
+      text-decoration: none;
+      font-size: 20px;
+      padding: 35px;
+      margin: 0 40px 0 0 ;
+      color: gold;
+      
+  }
+
+  .headlink:hover {
+      color: goldenrod;  
+  }
+
+  .main {
+      background-image: url(https://images3.alphacoders.com/310/thumb-1920-31075.png);
+      height: 612px;
+      background-size: contain;
+      background-position: 20%;
+      text-align: center;
+  }
+
+  .main img {
+      width:  5rem;
+      margin-top: 20px;
+      position: relative;
+      animation: zoomies 4s infinite;
+      transition: transform 1s;   
+  }
+
+  @keyframes zoomies {
+      0% {
+          top: 0;
+          left: -400px;
+      }    
+
+      50% {
+          left: 400px;
+          top: 0;
+          transform: rotateY(180deg);
+      }
+
+      100% {
+          top: 0;
+          left: -400px;
+      }
+  }
+
+  .text {
+      text-align: center;
+  }
+
+  .text h1 {
+      font-size: 60px;
+      font-weight: 700;
+      color: yellow;
+      margin-top: 40px;
+  }
+
+  .text p {
+      margin-top: 30px;
+      font-size: 26px;
+      font-weight: 400;
+  }
+
+  .text button {
+      margin-top: 40px;
+      font-size: 20px;
+      padding: 14px 20px;
+      background-color: blue;
+      transition: .5s linear;
+  }
+
+  .text button:hover {
+      cursor: pointer;
+      background-color: gold;
+  }
+
+  .background {
+      background-image: url(https://i.pinimg.com/originals/c4/c8/e2/c4c8e2c0479659b201eed1b5c284d6a7.png);
+      height: 1000px;
+      background-size: cover;
+      background-position: 50%;
+      position: relative;
+  }
+
+  .subh h2 {
+    top: 50px;
+    text-align: center;
+    font-size: 43px;
+    color: gold;
+
+  }
+
+  .card {
+      position: relative;
+      top: 50px;
+      width: 300px;
+      height: 420px;
+      perspective: 1000px;
+      margin: auto;
+  }
+
+
+  .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front img {
+      width: 300px;
+      height: 400px;
+      background-color: blue;
+    }
+
+    .flip-card-front h1 {
+      color: gold;
+      background-color: blue ;
+    }
+
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back {
+      background-color: blue;
+      color: gold;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back h2 {
+      margin-top: 26px;
+      text-decoration: underline;
+    }
+    
+    .flip-card-back p {
+      margin-top: 30px;
+      font-size: 19px;
+    }
+
+    .card2 {
+      position: relative;
+      top: 100px;
+      width: 300px;
+      height: 420px;
+      perspective: 1000px;
+      margin: auto;
+  }
+
+
+  .flip-card-inner2 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card2:hover .flip-card-inner2 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front2 img {
+      width: 300px;
+      height: 400px;
+      background-color: red;
+    }
+
+    .flip-card-front2 h1 {
+      color: white;
+      background-color: red ;
+    }
+
+    .flip-card-front2, .flip-card-back2 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back2 {
+      background-color: red;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back2 h2 {
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    
+    .flip-card-back2 p {
+      margin-top: 50px;
+      font-size: 19px;
+    }
+
+    .card3 {
+      position: relative;
+      top: -320px;
+      left: 60px;
+      width: 300px;
+      height: 420px;
+      perspective: 1000px;
+  }
+
+    .flip-card-inner3 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card3:hover .flip-card-inner3 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front3 img {
+      width: 300px;
+      height: 400px;
+      background-color: goldenrod;
+    }
+
+    .flip-card-front3 h1 {
+      color: white;
+      background-color: goldenrod ;
+    }
+
+    .flip-card-front3, .flip-card-back3 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back3 {
+      background-color: orangered;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back3 h2 {
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    
+    .flip-card-back3 p {
+      margin-top: 50px;
+      font-size: 19px;
+    }
+
+    .card4 {
+      position: relative;
+      top: -742px;
+      right: -1100px;
+      width: 300px;
+      height: 420px;
+      perspective: 1000px;
+  }
+
+    .flip-card-inner4 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    .card4:hover .flip-card-inner4 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-front4 img {
+      width: 300px;
+      height: 400px;
+      background-color: pink;
+    }
+
+    .flip-card-front4 h1 {
+      color: white;
+      background-color: pink ;
+    }
+
+    .flip-card-front4, .flip-card-back4 {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .flip-card-back4 {
+      background-color: pink;
+      color: white;
+      transform: rotateY(180deg);
+    }
+
+    .flip-card-back4 h2 {
+      margin-top: 20px;
+      text-decoration: underline;
+    }
+    
+    .flip-card-back4 p {
+      margin-top: 50px;
+      font-size: 19px;
+    }
+
+  @media screen and (max-width: 600px) {
+     header {
+      width: 100vw;
+      height: auto;
+     }
+
+     nav {
+      width: 100vw;
+      height: auto;
+     }
+
+     nav ul {
+      display: flex;
+     }
+
+     nav ul li {
+      width: 50%;
+     }
+
+     .main {
+      height: auto;
+      width: 100%;
+
+     }
+
+     .card4 {
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      left: 20px;
+     }
+  }
